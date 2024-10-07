@@ -1,6 +1,9 @@
 const assert = require('assert').strict;
 
 function nextPairs(value) {
+
+
+    
 }
 
 assert.deepStrictEqual(nextPairs(3), [2,4])

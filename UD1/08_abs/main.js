@@ -2,7 +2,7 @@ const assert = require('assert').strict;
 
 function abs(value) {
 //    const result =Math.abs(value)
- console.log(valor);
+ console.log(value);
     //return valor
     return Math.abs(value)
 
