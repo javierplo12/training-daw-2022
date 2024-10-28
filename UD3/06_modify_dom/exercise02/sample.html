@@ -6,9 +6,25 @@
 window.onload = function() {
 	// Numero de enlaces de la pagina
 
+	 const enlaces = document.getElementsByTagName('a');
+	 console.log("Número de enlaces en la página:", enlaces.length);
+
 	// Direccion del penultimo enlace
+	if (enlaces.length > 1) {
+        const penultimoEnlace = enlaces[enlaces.length - 2].href;
+        console.log("Dirección del penúltimo enlace:", penultimoEnlace);
+    }
 
 	// Numero de enlaces que apuntan a http://prueba
+
+	let contadorPrueba = 0;
+    for (let i = 0; i < enlaces.length; i++) {
+        if (enlaces[i].href === "http://prueba/") {
+            contadorPrueba++;
+        }
+    }
+    console.log("Número de enlaces que apuntan a 'http://prueba':", contadorPrueba);
+
 
 	// Numero de enlaces del tercer párrafo
 
