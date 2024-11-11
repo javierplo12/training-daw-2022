@@ -1,28 +1,27 @@
 window.onload = function (e) {
-    console.log('documento cargado')
-
-    document.getElementsByTagName('h2')[1].innerText = 'titulo cambiado'
-    document.getElementById('username');
-    const firstElements = document.querySelectorAll("article .first");
-
-    firstElements.forEach(element => {
-        element.style.color = "red"; 
-    })
-
-    document.querySelectorAll('li.item')
-
-
-    const buttonsInButtonsClass = document.querySelectorAll(".buttons button");
     
-    buttonsInButtonsClass.forEach(button => {
-        button.innerText = "Nuevo Texto"; // Cambia el texto del botón
-        button.style.backgroundColor = "blue"; // Cambia el color de fondo del botón
-    });
-    
-    
+    document.getElementsByTagName('h2')[1].innerHTML = 'Contenido modificado con innerHTML';
+  
 
+    let button = document.getElementById('username');
+    console.log(button);
+  
+   
+    const allFirst = document.querySelectorAll('article.first')
+    for (let item of allFirst) {
+      item.style['background-color'] = '#00ccff'
+    }
+  
 
+    const allLi = document.querySelectorAll('li.item')
+    for (let item of allLi){
+      console.log(item);
+    }
+  
 
+    const allButtons = document.querySelectorAll('buttons button')
 
-
-}
+    document.querySelectorAll('p')[0].style['background-color'] = 'pink';
+  
+  
+  }
